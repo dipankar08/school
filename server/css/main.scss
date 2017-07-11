@@ -16,3 +16,40 @@ body.welcome{
         text-align: center;
     }
 }
+
+/*fonts*/
+html { font-size: 100%; } 
+body { font-size: 1.5rem; } /* =14px */
+h1   { font-size: 2.5rem; } /* =24px */
+h2   { font-size: 2.4rem; } /* =24px */
+h3   { font-size: 2.4rem; } /* =24px */
+h4   { font-size: 2.4rem; } /* =24px */
+
+.f1 { font-size: 1rem; }
+.f2 { font-size: 2rem; }
+.f3 { font-size: 3rem; }
+.f4 { font-size: 4rem; }
+.f5 { font-size: 5rem; }
+.f6 { font-size: 6rem; }
+
+.fleft{float:left}
+.fright{float:right}
+.center{ text-align:center; margin:auto; padding:40% 0;}
+.hcenter{ text-align:center; margin:auto;}
+
+body, .fw{ width:100%;height:100%;padding:0;margin:0}
+
+/*Colors */
+.red{color:red;background:white}
+.fill.red{color:white;background:red}
+
+/*cards*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 2px 16px;
+    border-radius: 5px;
+}
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
