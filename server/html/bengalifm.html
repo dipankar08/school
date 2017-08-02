@@ -23,6 +23,7 @@
             $('.day0').attr('endpoint','http://52.89.112.230/api/nodelstat_bengalifm?_cmd=count&timestamp='+day(0))
             $('.day1').attr('endpoint','http://52.89.112.230/api/nodelstat_bengalifm?_cmd=count&timestamp='+day(-1))
             $('.day2').attr('endpoint','http://52.89.112.230/api/nodelstat_bengalifm?_cmd=count&timestamp='+day(-2))
+            $('.day3').attr('endpoint','http://52.89.112.230/api/nodelstat_bengalifm?_cmd=count&timestamp='+day(-3))
         });
         </script>
         <script src="/js/main.js?v=100"></script>
@@ -33,23 +34,27 @@
             <div class="fleft fill red" style="height:100%;width:400px;">
             </div>
             <div class="fright red" style="height:100%;width:calc(100% - 400px);">
-                <div class="fleft card fill red center smt day0" style=" height: 400px;  width: 300px;margin: 22px;"  endpoint="http://52.89.112.230/api/nodelstat_bengalifm?_cmd=count&timestamp=11/07/2017">
+                <div class="fleft card fill red center smt day0" style=" height: 400px;  width: 270px;margin: 22px;"  endpoint="http://52.89.112.230/api/nodelstat_bengalifm?_cmd=count&timestamp=11/07/2017">
                     <h1 class="f5 center out">***</h1>
                     <h3 class="f1 hcenter">Total Activity Today</h3>
                 </div>
-                <div class="fleft card fill red center smt day1" style=" height: 400px;  width: 300px;margin: 22px;"  endpoint="http://52.89.112.230/api/nodelstat_bengalifm?_cmd=count&timestamp=11/07/2017">
+                <div class="fleft card fill red center smt day1" style=" height: 400px;  width: 270px;margin: 22px;"  endpoint="http://52.89.112.230/api/nodelstat_bengalifm?_cmd=count&timestamp=11/07/2017">
                     <h1 class="f5 center out">***</h1>
                     <h3 class="f1 hcenter">Yestarday Activity count</h3>
                 </div>
-                <div class="fleft card fill red center smt day2" style=" height: 400px;  width: 300px;margin: 22px;"  endpoint="http://52.89.112.230/api/nodelstat_bengalifm?_cmd=count&timestamp=11/07/2017">
+                <div class="fleft card fill red center smt day2" style=" height: 400px;  width: 270px;margin: 22px;"  endpoint="http://52.89.112.230/api/nodelstat_bengalifm?_cmd=count&timestamp=11/07/2017">
                     <h1 class="f5 center out">***</h1>
                     <h3 class="f1 hcenter">LastToLastDay</h3>
                 </div>
-                <div class="fleft card fill red center smt" style=" height: 400px;  width: 300px;margin: 22px;" endpoint="http://52.89.112.230/api/nodelstat_bengalifm?_cmd=count&tag=launch">
+                <div class="fleft card fill red center smt day3" style=" height: 400px;  width: 270px;margin: 22px;"  endpoint="http://52.89.112.230/api/nodelstat_bengalifm?_cmd=count&timestamp=11/07/2017">
+                    <h1 class="f5 center out">***</h1>
+                    <h3 class="f1 hcenter">LastToLastDay</h3>
+                </div>
+                <div class="fleft card fill red center smt" style=" height: 400px;  width: 280px;margin: 22px;" endpoint="http://52.89.112.230/api/nodelstat_bengalifm?_cmd=count&tag=launch">
                     <h1 class="f5 center out">***</h1>
                     <h3 class="f1 hcenter">Launch till now</h3>
                 </div>
-                <div class="fleft card fill red center smt" style=" height: 400px;  width: 300px;margin: 22px;" endpoint="http://52.89.112.230/api/nodelstat_bengalifm?_cmd=count&tag=play_success">
+                <div class="fleft card fill red center smt" style=" height: 400px;  width: 280px;margin: 22px;" endpoint="http://52.89.112.230/api/nodelstat_bengalifm?_cmd=count&tag=play_success">
                     <h1 class="f5 center out">***</h1>
                     <h3 class="f1 hcenter">Number of plays till now </h3>
                 </div>

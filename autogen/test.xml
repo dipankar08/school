@@ -1,0 +1,75 @@
+<form>
+    <backend
+        endpoints="abc"
+        columns = "2">       
+    </backend>
+    <data>
+        <datagroup name="fullname">
+            <entry
+                name="firstname"
+                label ="firstname"
+                type="input"
+                placeholder="Enter your name">
+            </entry>
+            <entry
+                label ="firstname"
+                name="lastname"
+                type="input"
+                placeholder="Enter your last name">
+            </entry>   
+        </datagroup>        
+        <datagroup 
+            name="fullname"
+            label ="Your Documents"
+            >
+            <entry
+                label ="input"
+                name="input"
+                type="input"
+                placeholder="input"
+                default="Hello"
+                height="10px"
+                width="20px">                
+            </entry>
+            <entry
+                label ="password"
+                name="password"
+                type="password"
+                placeholder="password">
+            </entry>
+            <entry
+                label ="textarea"
+                name="textarea"
+                type="textarea"
+                placeholder="textarea">
+            </entry>   
+            <entry
+                label ="radio"
+                name="radio"
+                type="radio"
+                placeholder="radio">
+                <option label ="radio1" value="radio1" />
+                <option label ="radio2" value="radio2" />
+                <option label ="radio3" value="radio3" />
+            </entry>   
+            <entry
+                label ="checkbox"
+                name="checkbox"
+                type="checkbox"
+                placeholder="checkbox">
+                <option label ="checkbox1" value="checkbox1" />
+                <option label ="checkbox2" value="checkbox2" />
+                <option label ="checkbox3" value="checkbox3" />
+            </entry>   
+            <entry
+                label ="select"
+                name="select"
+                type="select"
+                placeholder="select">
+                <option label ="select1" value="select1" />
+                <option label ="select2" value="select2" />
+                <option label ="select3" value="select3" />
+            </entry> 
+        </datagroup>
+    </data>
+</form>
