@@ -1,4 +1,6 @@
-<div class=">
+{% extends "layout.html" %}
+{% block body %}
+<div class="xform">
     <div>{% for datagroup in form.data.datagroup %}
         <div class="datagroup">
             <p>{{datagroup.name}}</p>
@@ -30,3 +32,4 @@
             </ul>
     {% endfor %}</div>    
 </div>
+{% endblock %}
