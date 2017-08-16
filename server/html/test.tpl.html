@@ -1,60 +1,109 @@
-<html>
-    <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="/js/main.js"></script>
-        <link rel="stylesheet" type="text/css" href="/css/main.css">
-    </head>
-    <body>
-        
+<style>
+ul,li{margin:0;padding:0;width:100%;display:inline-block;}
+.xfields li{
+    height: 45px;
+    margin: 0px 10px 10px 10px;
+}
+.xfields li.label{ width:50px}
+.xfields li.input{ width:calc(50% - 100px);}
+    .xform{}
+    .tab_holder{}
+    .main_holder{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.datagroup {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+    border: 1px dashed black;
+    padding: 0px;
+}
+.datagroup .head {
+border-bottom: 1px dashed black;
+    padding: 10px 0;
+    margin-bottom: 13px;
+    margin: 0;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    }
+.datagroup     ul {padding: 20px 0;
+}
+    .xfields {}
+    
+    .xfields .xfield{}
+input[type=text],input[type=password], select, textarea,checkbox {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    font-family: monospace;
+    border: 1px solid black;
+    padding: 5px;
+    outline: none;
+    color: black;} 
+</style>
 <div class="xform">
-    <div>
-        <div class="datagroup">
-            <p>fullname</p>
+    <div class="tab_holder">
+        <ul>
+        
+            <li class="fullname"> basic info</li>
+        
+            <li class="fullname"> Your Documents</li>
+        
+        </ul>
+    </div>
+    <div class="main_holder">
+        
+        <div class="datagroup fullname">
+            <p class="head">fullname</p>
             <ul class="xfields" name="fullname">
                                     
-                    <li><p>firstname</p></li>
-                    <li>
+                    <li class="label"><p>firstname</p></li>
+                    <li class="input">
                         
-                         <input name="firstname" placeholder="Enter your name" class="xfield"></input>
+                         <input type="text" name="firstname" placeholder="Enter your name" class="xfield"></input>
                                                 
                     </li>
                                     
-                    <li><p>firstname</p></li>
-                    <li>
+                    <li class="label"><p>firstname</p></li>
+                    <li class="input">
                         
-                         <input name="lastname" placeholder="Enter your last name" class="xfield"></input>
+                         <input type="text" name="lastname" placeholder="Enter your last name" class="xfield"></input>
                                                 
                     </li>
                 
             </ul>
+        </div> <!-- end of datagroup -->
     
-        <div class="datagroup">
-            <p>fullname</p>
+        <div class="datagroup fullname">
+            <p class="head">fullname</p>
             <ul class="xfields" name="fullname">
                                     
-                    <li><p>input</p></li>
-                    <li>
+                    <li class="label"><p>input</p></li>
+                    <li class="input">
                         
-                         <input name="input" placeholder="input" class="xfield"></input>
+                         <input type="text" name="input" placeholder="input" class="xfield"></input>
                                                 
                     </li>
                                     
-                    <li><p>password</p></li>
-                    <li>
+                    <li class="label"><p>password</p></li>
+                    <li class="input">
                         
                           <input type="password" name="password" value=""><br>        
                                                 
                     </li>
                                     
-                    <li><p>textarea</p></li>
-                    <li>
+                    <li class="label"><p>textarea</p></li>
+                    <li class="input">
                         
-                         <textarea name="textarea" placeholder="textarea" class="xfield"></textarea>
+                         <textarea type="text" name="textarea" placeholder="textarea" class="xfield"></textarea>
                                                 
                     </li>
                                     
-                    <li><p>radio</p></li>
-                    <li>
+                    <li class="label"><p>radio</p></li>
+                    <li class="input">
                         
                           
                           <input type="radio" name="radio" value="radio1" checked> radio1<br>
@@ -66,8 +115,8 @@
                                                 
                     </li>
                                     
-                    <li><p>checkbox</p></li>
-                    <li>
+                    <li class="label"><p>checkbox</p></li>
+                    <li class="input">
                         
                           
                           <input type="checkbox" name="checkbox" value="checkbox1" checked> checkbox1<br>
@@ -79,8 +128,8 @@
                                                 
                     </li>
                                     
-                    <li><p>select</p></li>
-                    <li>
+                    <li class="label"><p>select</p></li>
+                    <li class="input">
                         
                         <select name="select" placeholder="select" class="xfield">
                           
@@ -95,8 +144,7 @@
                     </li>
                 
             </ul>
-    </div>    
-</div>
-
-    </body>
-</html>
+        </div> <!-- end of datagroup -->
+    
+    </div>    <!-- end of main_holder -->
+</div> <!-- end of xform -->

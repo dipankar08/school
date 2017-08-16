@@ -4,7 +4,7 @@
         columns = "2">       
     </backend>
     <data>
-        <datagroup name="fullname">
+        <datagroup name="fullname" label ="basic info">
             <entry
                 name="firstname"
                 label ="firstname"
