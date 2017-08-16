@@ -1,5 +1,7 @@
+{% extends "layout.html" %}
+{% block head %}
 <style>
-ul,li{margin:0;padding:0;width:100%;display:inline-block;}
+ul,li{margin:0;padding:0;display:inline-block;}
 .xfields li{
     height: 45px;
     margin: 0px 10px 10px 10px;
@@ -44,6 +46,8 @@ input[type=text],input[type=password], select, textarea,checkbox {
     outline: none;
     color: black;} 
 </style>
+{% endblock %} 
+{% block body %}
 <div class="xform">
     <div class="tab_holder">
         <ul>
@@ -86,3 +90,4 @@ input[type=text],input[type=password], select, textarea,checkbox {
     {% endfor %}
     </div>    <!-- end of main_holder -->
 </div> <!-- end of xform -->
+{% endblock %}
